@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Playlist — Selene & Nella</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --rose: #b87979;
+    --brown: #654b45;
+    --dark: #493631;
+    --white: #fffaf5;
+    --pink: #e8c9c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #e5d5ca;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+header {
+    text-align: center;
+    padding: 75px 20px 40px;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 65px);
+    font-weight: 400;
+}
+
+header p:last-child {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--rose);
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.intro {
+    max-width: 450px;
+    margin: 0 auto 45px;
+    padding: 0 25px;
+    text-align: center;
+    color: var(--brown);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.playlist {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 25px 90px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid #eadbd1;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+    transition: 0.3s;
+}
+
+.song:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(90, 60, 50, 0.06);
+}
+
+.song-number {
+    color: var(--rose);
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    min-width: 25px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.play-link {
+    color: var(--rose);
+    text-decoration: none;
+    border: 1px solid var(--pink);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.play-link:hover {
+    background: var(--rose);
+    color: white;
+}
+
+.note {
+    background: var(--pink);
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.note p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.note span {
+    display: block;
+    margin-top: 15px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--brown);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .song {
+        gap: 13px;
+        padding: 15px;
+    }
+
+    .song-info h2 {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="story.html">OUR STORY</a>
+    <a href="memories.html">MEMORIES</a>
+    <a href="little-things.html">LITTLE THINGS</a>
+    <a href="playlist.html" class="active">PLAYLIST</a>
+    <a href="letter.html">A LETTER</a>
+    <a href="birthday.html">BIRTHDAY</a>
+</nav>
+
+<header>
+    <p class="eyebrow">SOUNDTRACK OF OUR FRIENDSHIP</p>
+    <h1>Our Playlist</h1>
+    <p>Some memories sound like music.</p>
+</header>
+
+<p class="intro">
+    Five songs, five little worlds.
+    A collection of melodies that remind us
+    of moments, feelings, and each other.
+</p>
+
+<section class="playlist">
+
+    <article class="song">
+        <span class="song-number">01</span>
+        <div class="song-info">
+            <h2>Song Title One</h2>
+            <p>ARTIST NAME</p>
+        </div>
+        <a class="play-link" href="#" target="_blank">▶</a>
+    </article>
+
+    <article class="song">
+        <span class="song-number">02</span>
+        <div class="song-info">
+            <h2>Song Title Two</h2>
+            <p>ARTIST NAME</p>
+        </div>
+        <a class="play-link" href="#" target="_blank">▶</a>
+    </article>
+
+    <article class="song">
+        <span class="song-number">03</span>
+        <div class="song-info">
+            <h2>Song Title Three</h2>
+            <p>ARTIST NAME</p>
+        </div>
+        <a class="play-link" href="#" target="_blank">▶</a>
+    </article>
+
+    <article class="song">
+        <span class="song-number">04</span>
+        <div class="song-info">
+            <h2>Song Title Four</h2>
+            <p>ARTIST NAME</p>
+        </div>
+        <a class="play-link" href="#" target="_blank">▶</a>
+    </article>
+
+    <article class="song">
+        <span class="song-number">05</span>
+        <div class="song-info">
+            <h2>Song Title Five</h2>
+            <p>ARTIST NAME</p>
+        </div>
+        <a class="play-link" href="#" target="_blank">▶</a>
+    </article>
+
+</section>
+
+<section class="note">
+    <p>
+        "If our friendship had a soundtrack,<br>
+        this would be it."
+    </p>
+    <span>SELENE & NELLA</span>
+</section>
+
+<footer>
+    MADE WITH LOVE · SELENE & NELLA
+</footer>
+
+</body>
+  </html>
