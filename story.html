@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Selene & Nella</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --pink: #e8c9c4;
+    --rose: #b87979;
+    --brown: #654b45;
+    --dark: #493631;
+    --white: #fffaf5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #e5d5ca;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+header {
+    text-align: center;
+    padding: 75px 20px 55px;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 65px);
+    font-weight: 400;
+}
+
+header p:last-child {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--rose);
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.timeline {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 25px 90px;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 80px;
+    width: 1px;
+    background: #d9b8ae;
+}
+
+.chapter {
+    width: 50%;
+    padding: 20px 35px;
+    position: relative;
+}
+
+.chapter:nth-child(odd) {
+    margin-left: 50%;
+}
+
+.chapter::before {
+    content: "♡";
+    position: absolute;
+    top: 30px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--cream);
+    color: var(--rose);
+    text-align: center;
+    line-height: 24px;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.chapter:nth-child(odd)::before {
+    left: -12px;
+}
+
+.chapter:nth-child(even)::before {
+    left: auto;
+    right: -12px;
+}
+
+.card {
+    background: var(--white);
+    padding: 28px;
+    border: 1px solid #eadbd1;
+    box-shadow: 0 8px 25px rgba(90, 60, 50, 0.05);
+}
+
+.chapter-number {
+    color: var(--rose);
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 13px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--brown);
+}
+
+.ending {
+    text-align: center;
+    padding: 15px 20px 75px;
+}
+
+.ending p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--rose);
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .timeline::before {
+        left: 13px;
+    }
+
+    .chapter,
+    .chapter:nth-child(odd) {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px 10px 15px 40px;
+    }
+
+    .chapter::before,
+    .chapter:nth-child(odd)::before,
+    .chapter:nth-child(even)::before {
+        left: 1px;
+        right: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="story.html" class="active">OUR STORY</a>
+    <a href="memories.html">MEMORIES</a>
+    <a href="little-things.html">LITTLE THINGS</a>
+    <a href="playlist.html">PLAYLIST</a>
+    <a href="letter.html">A LETTER</a>
+    <a href="birthday.html">BIRTHDAY</a>
+</nav>
+
+<header>
+    <p class="eyebrow">CHAPTERS OF US</p>
+    <h1>Our Story</h1>
+    <p>Four years, a thousand little moments.</p>
+</header>
+
+<section class="timeline">
+
+    <article class="chapter">
+        <div class="card">
+            <p class="chapter-number">CHAPTER 01</p>
+            <h2>The Beginning</h2>
+            <p>
+                Every beautiful story has a beginning.
+                Ours started with two people who had no idea
+                how important they would become to each other.
+            </p>
+        </div>
+    </article>
+
+    <article class="chapter">
+        <div class="card">
+            <p class="chapter-number">CHAPTER 02</p>
+            <h2>Getting Closer</h2>
+            <p>
+                Slowly, conversations became longer,
+                laughter became louder, and ordinary days
+                started feeling a little more special.
+            </p>
+        </div>
+    </article>
+
+    <article class="chapter">
+        <div class="card">
+            <p class="chapter-number">CHAPTER 03</p>
+            <h2>Our Little World</h2>
+            <p>
+                We created our own language:
+                little jokes, familiar words, endless talks,
+                and memories that only we could understand.
+            </p>
+        </div>
+    </article>
+
+    <article class="chapter">
+        <div class="card">
+            <p class="chapter-number">CHAPTER 04</p>
+            <h2>Still Us</h2>
+            <p>
+                Four years later, there are still so many
+                stories to tell, places to see, and moments
+                waiting to become memories.
+            </p>
+        </div>
+    </article>
+
+</section>
+
+<section class="ending">
+    <p>
+        And this is not the end of our story.<br>
+        It's just another page.
+    </p>
+</section>
+
+<footer>
+    MADE WITH LOVE · SELENE & NELLA
+</footer>
+
+</body>
+  </html>
