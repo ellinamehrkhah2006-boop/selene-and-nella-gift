@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Nella — Selene & Nella</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --rose: #b87979;
+    --brown: #654b45;
+    --dark: #493631;
+    --white: #fffaf5;
+    --pink: #e8c9c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #e5d5ca;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+.hero {
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 75px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 10vw, 85px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: var(--rose);
+    font-style: italic;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--rose);
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.message {
+    max-width: 480px;
+    color: var(--brown);
+    font-size: 13px;
+    line-height: 2.2;
+    margin-top: 30px;
+}
+
+.heart {
+    color: var(--rose);
+    font-size: 28px;
+    margin-top: 35px;
+    animation: heartbeat 1.8s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.decoration {
+    position: absolute;
+    color: var(--rose);
+    opacity: 0.45;
+    font-size: 27px;
+}
+
+.one {
+    top: 20%;
+    left: 13%;
+}
+
+.two {
+    bottom: 20%;
+    right: 14%;
+}
+
+.three {
+    top: 35%;
+    right: 20%;
+    font-size: 18px;
+}
+
+.wish-section {
+    background: var(--white);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.wish-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.wish-section p {
+    max-width: 520px;
+    margin: auto;
+    color: var(--brown);
+    font-size: 13px;
+    line-height: 2.3;
+}
+
+.final-message {
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.final-message p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.9;
+    color: var(--rose);
+}
+
+.final-message span {
+    display: block;
+    margin-top: 25px;
+    color: var(--brown);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="story.html">OUR STORY</a>
+    <a href="memories.html">MEMORIES</a>
+    <a href="little-things.html">LITTLE THINGS</a>
+    <a href="playlist.html">PLAYLIST</a>
+    <a href="letter.html">A LETTER</a>
+    <a href="birthday.html" class="active">BIRTHDAY</a>
+</nav>
+
+<main>
+
+    <section class="hero">
+
+        <span class="decoration one">✧</span>
+        <span class="decoration two">♡</span>
+        <span class="decoration three">✿</span>
+
+        <p class="eyebrow">A SPECIAL DAY FOR A SPECIAL SOUL</p>
+
+        <h1>
+            Happy Birthday,<br>
+            <span>Nella!</span>
+        </h1>
+
+        <p class="subtitle">Today, the world celebrates you.</p>
+
+        <p class="message">
+            I hope today is filled with the kind of happiness
+            that stays long after the candles are blown out.
+            You deserve all the beautiful things life has to offer.
+        </p>
+
+        <div class="heart">♡</div>
+
+    </section>
+
+    <section class="wish-section">
+
+        <h2>A Wish for You</h2>
+
+        <p>
+            May this new chapter bring you closer to your dreams.
+            May you find reasons to smile in unexpected places,
+            meet wonderful people, discover beautiful things,
+            and never forget how much you mean to those who love you.
+        </p>
+
+    </section>
+
+    <section class="final-message">
+
+        <p>
+            Here's to another year of you,<br>
+            another year of us,<br>
+            and a thousand memories yet to come.
+        </p>
+
+        <span>HAPPY BIRTHDAY, MY NELLA ♡</span>
+
+    </section>
+
+</main>
+
+<footer>
+    MADE WITH LOVE · SELENE & NELLA
+</footer>
+
+</body>
+</html>
