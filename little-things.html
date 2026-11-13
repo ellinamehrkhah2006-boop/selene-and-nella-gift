@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Things — Selene & Nella</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --rose: #b87979;
+    --brown: #654b45;
+    --dark: #493631;
+    --white: #fffaf5;
+    --pink: #e8c9c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #e5d5ca;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+header {
+    text-align: center;
+    padding: 75px 20px 45px;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 65px);
+    font-weight: 400;
+}
+
+header p:last-child {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--rose);
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.intro {
+    max-width: 490px;
+    margin: 0 auto 55px;
+    padding: 0 25px;
+    text-align: center;
+    color: var(--brown);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.collection {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 25px 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.item {
+    background: var(--white);
+    border: 1px solid #eadbd1;
+    padding: 30px;
+    min-height: 190px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(90, 60, 50, 0.07);
+}
+
+.icon {
+    font-size: 25px;
+    color: var(--rose);
+    margin-bottom: 17px;
+}
+
+.item h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.item p {
+    color: var(--brown);
+    font-size: 12px;
+    line-height: 2;
+}
+
+.number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: #d9b8ae;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.quote {
+    background: var(--pink);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+.quote span {
+    display: block;
+    margin-top: 17px;
+    color: var(--brown);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .collection {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        gap: 18px;
+    }
+
+    .item {
+        min-height: 170px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="story.html">OUR STORY</a>
+    <a href="memories.html">MEMORIES</a>
+    <a href="little-things.html" class="active">LITTLE THINGS</a>
+    <a href="playlist.html">PLAYLIST</a>
+    <a href="letter.html">A LETTER</a>
+    <a href="birthday.html">BIRTHDAY</a>
+</nav>
+
+<header>
+    <p class="eyebrow">THE DETAILS THAT MAKE US, US</p>
+    <h1>Little Things</h1>
+    <p>Small things, big meanings.</p>
+</header>
+
+<p class="intro">
+    Not every important memory is a photograph.
+    Some live in words, silly jokes, familiar habits,
+    and things that probably make no sense to anyone else.
+</p>
+
+<section class="collection">
+
+    <article class="item">
+        <span class="number">01</span>
+        <div class="icon">♡</div>
+        <h2>Our Nicknames</h2>
+        <p>
+            Selene and Nella.
+            Two little names that belong to our own world.
+        </p>
+    </article>
+
+    <article class="item">
+        <span class="number">02</span>
+        <div class="icon">✧</div>
+        <h2>Inside Jokes</h2>
+        <p>
+            The jokes that make us laugh even when
+            nobody else understands what's so funny.
+        </p>
+    </article>
+
+    <article class="item">
+        <span class="number">03</span>
+        <div class="icon">☁</div>
+        <h2>Our Conversations</h2>
+        <p>
+            Random thoughts, long talks, little updates,
+            and conversations that never seem to end.
+        </p>
+    </article>
+
+    <article class="item">
+        <span class="number">04</span>
+        <div class="icon">✿</div>
+        <h2>Our Traditions</h2>
+        <p>
+            The familiar little things we keep coming
+            back to, without even planning them.
+        </p>
+    </article>
+
+    <article class="item">
+        <span class="number">05</span>
+        <div class="icon">☾</div>
+        <h2>Favorite Things</h2>
+        <p>
+            Songs, stories, places, and all the little
+            things that remind us of each other.
+        </p>
+    </article>
+
+    <article class="item">
+        <span class="number">06</span>
+        <div class="icon">🎀</div>
+        <h2>Just Because</h2>
+        <p>
+            No occasion, no special reason.
+            Just a reminder that you're loved.
+        </p>
+    </article>
+
+</section>
+
+<section class="quote">
+    <p>
+        "It's the little things<br>
+        that make a friendship feel like home."
+    </p>
+    <span>SELENE & NELLA</span>
+</section>
+
+<footer>
+    MADE WITH LOVE · SELENE & NELLA
+</footer>
+
+</body>
+  </html>
