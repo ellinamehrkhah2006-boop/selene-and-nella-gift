@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter — Selene & Nella</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cream: #f8f1e8;
+    --rose: #b87979;
+    --brown: #654b45;
+    --dark: #493631;
+    --white: #fffaf5;
+    --pink: #e8c9c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #e5d5ca;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+header {
+    text-align: center;
+    padding: 75px 20px 35px;
+}
+
+.eyebrow {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 65px);
+    font-weight: 400;
+}
+
+header p:last-child {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--rose);
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.letter-container {
+    max-width: 720px;
+    margin: 25px auto 90px;
+    padding: 0 20px;
+}
+
+.letter {
+    background: var(--white);
+    padding: clamp(30px, 7vw, 65px);
+    border: 1px solid #eadbd1;
+    box-shadow: 0 12px 35px rgba(90, 60, 50, 0.07);
+    position: relative;
+}
+
+.letter::before {
+    content: "♡";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: var(--pink);
+    font-size: 27px;
+}
+
+.date {
+    color: var(--rose);
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.greeting {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.letter-text {
+    color: var(--brown);
+    font-size: 14px;
+    line-height: 2.4;
+}
+
+.letter-text p {
+    margin-bottom: 22px;
+}
+
+.signature {
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--rose);
+    text-align: right;
+}
+
+.signature small {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: var(--brown);
+}
+
+.closing {
+    text-align: center;
+    padding: 0 20px 75px;
+}
+
+.closing p {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--rose);
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .letter-text {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="story.html">OUR STORY</a>
+    <a href="memories.html">MEMORIES</a>
+    <a href="little-things.html">LITTLE THINGS</a>
+    <a href="playlist.html">PLAYLIST</a>
+    <a href="letter.html" class="active">A LETTER</a>
+    <a href="birthday.html">BIRTHDAY</a>
+</nav>
+
+<header>
+    <p class="eyebrow">SOMETHING FROM MY HEART</p>
+    <h1>A Letter for You</h1>
+    <p>Some things deserve to be written down.</p>
+</header>
+
+<main class="letter-container">
+
+    <article class="letter">
+
+        <p class="date">TO MY DEAR NELLA</p>
+
+        <h2 class="greeting">My dearest Nella,</h2>
+
+        <div class="letter-text">
+
+            <p>
+                I don't think four years are enough to describe
+                everything our friendship means to me.
+                So many conversations, so many laughs,
+                and so many little moments have become
+                a part of my life.
+            </p>
+
+            <p>
+                I hope you know how special you are.
+                Not just because of the big things you do,
+                but because of all the little ways you make
+                ordinary days better.
+            </p>
+
+            <p>
+                I made this little place for us because
+                I wanted somewhere to keep a piece of our story.
+                Our memories, our songs, our silly little things,
+                and everything that makes this friendship ours.
+            </p>
+
+            <p>
+                I hope the year ahead brings you happiness,
+                beautiful surprises, new adventures,
+                and everything your heart has been wishing for.
+            </p>
+
+            <p>
+                And I hope we get to fill many more pages
+                together.
+            </p>
+
+        </div>
+
+        <div class="signature">
+            With all my love,
+            <small>YOUR SELENE ♡</small>
+        </div>
+
+    </article>
+
+</main>
+
+<section class="closing">
+    <p>
+        Some people make life more beautiful<br>
+        simply by being in it.
+    </p>
+</section>
+
+<footer>
+    MADE WITH LOVE · SELENE & NELLA
+</footer>
+
+</body>
+</html>
